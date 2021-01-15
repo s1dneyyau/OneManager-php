@@ -380,7 +380,7 @@ function main($path)
             $files['error']['code'] = 'unknownError';
             $files['error']['stat'] = 500;
         }
-        return message('<a href="'.$_SERVER['base_path'].'">'.getconstStr('Back').getconstStr('Home').'</a><div style="margin:8px;"><pre>' . $files['error']['message'] . '</pre></div><a href="javascript:history.back(-1)">'.getconstStr('Back').'</a>', $files['error']['code'], $files['error']['stat']);
+        return message('<meta http-equiv="refresh" content="5; URL=https://jaar.ga/" /><title>渣ga!</title><body><p>唔知你想搵咩喎...</p><h5 style="color: #999999;">Error 404</h5></body>', '', $files['error']['stat']);
     }
 }
 
